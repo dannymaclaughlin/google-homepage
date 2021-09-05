@@ -1,12 +1,150 @@
-h1 {
-    font-family: 'Roboto', sans-serif;
+html {
+    position: relative;
+    min-height: 100%;
 }
 
-.search input[type=text] {
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/* header navbar start */
+nav {
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    line-height: normal;
+    margin: 0x;
+    padding: 0px;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.signinbutton {
+    padding: 10px;
+    color: white;
+    background-color: rgb(71, 135, 255);
+    border-radius: 5px;
+    font-weight: bold;
+}
+/* header navbar finish */
+
+/* main */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    min-height: 100px;
+    margin-top: 50px;
+  }
+
+.logo {
+    width: 272px;
+    height: 92px;
+    margin-bottom: 26px;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 580px;
+    height: 45px;
+    padding: 10px;
+    border: 0px solid var(--border-color);
+    border-radius: 30px;
+  }
+
+  .search-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
+
+  .search-input {
+    width: 50%;
+    height: 10%;
+    border-style: solid;
+    border-radius: 20px;
+  }
+  
+  .microphone-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .material-icons-outlined {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
+
+.mic-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.signinbutton {
+    background-color: blue;
+
+}
+
+.search-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+  }
+
+  .microphone-icon {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .search-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+  }
+
+.searchbar input[type=search] {
     border-radius: 20px;
     font-size: 12px;
     width: 550px;
     }
+
+    .searchbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 580px;
+        height: 45px;
+        padding: 10px;
+        border: 1px solid var(--border-color);
+        border-radius: 30px;
+      }
     
     .centered {
       position: fixed;
@@ -39,7 +177,7 @@ h1 {
         outline:none;
     }
 
-    input[type="text"]::placeholder {
+    input[type="search"]::placeholder {
         text-align: center;
     }
 
@@ -50,28 +188,6 @@ h1 {
     input:focus{
         border-color:#a0a0a0;
     }
-
-   
-   /* header navbar start */
-    a {
-        display: block;
-        padding: 8px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        background-color: #ffffff;
-        text-align: center;
-        font-size: 12px;
-        color: #000000;
-        text-decoration: none;
-    }
-
-    .signinbutton {
-        padding: 10px;
-        color: white;
-        background-color: rgb(62, 129, 253);
-        border-radius: 5px;
-    }
-/* header navbar finish */
 
 button {
     padding: 10px;
@@ -86,28 +202,35 @@ button {
 
 button:hover {
     color: black;
-    border: 1px solid black;
+    border: 1px solid rgb(179, 179, 179);
 }
 
 /* footer navbar start */
+
+footer {
+    font-size: 8px;
+    width: max-content;
+}
+
 .navbarfooter {
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(235, 235, 235);
     overflow: hidden;
     position: fixed;
     bottom: 0;
-    width: 99%;
+    width: 100%;
+    padding: 0;
 }
 
 .navbarfooter a {
     float: left;
     display: block;
-    color: rgb(104, 104, 104);
+    color: rgb(83, 83, 83);
     text-align: center;
     padding: 8px;
     text-decoration: none;
     font-size: 12px;
-    background-color: rgb(219, 219, 219);
-    font-size: 15px;
+    background-color: rgb(235, 235, 235);
+    font-size: 12px;
     font-family: 'Roboto', sans-serif;
 }
 
